@@ -29,11 +29,13 @@ export default class VendorWrapper extends Component {
           navigate(`/app/step${next}`);
         }}
       >
-        {img}
-        <h3>{name}</h3>
-        <h4>{address}</h4>
-        <h4>{price}</h4>
-        <h4>{phone}</h4>
+        <div>{img}</div>
+        <div className="bottom">
+          <h3>{name}</h3>
+          <h4>{address}</h4>
+          <h4>{price}</h4>
+          <h4>{phone}</h4>
+        </div>
       </Wrapper>
     );
   }
@@ -52,6 +54,10 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
   & :hover {
     cursor: pointer;
   }

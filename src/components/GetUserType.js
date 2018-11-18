@@ -8,13 +8,13 @@ export default class GetUserType extends Component {
     return (
       <Page>
         <h2>First, help us get to know you.</h2>
-        <h3>Are you the dying, or are you the bereived?</h3>
+        <h3>Are you the dying, or are you the berieved?</h3>
         <div className="button-container">
           <Button small onClick={() => handleUserTypeChange("dying")}>
             Dying
           </Button>
-          <Button small onClick={() => handleUserTypeChange("bereived")}>
-            Bereived
+          <Button small onClick={() => handleUserTypeChange("berieved")}>
+            Berieved
           </Button>
         </div>
       </Page>

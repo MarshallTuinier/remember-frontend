@@ -87,7 +87,7 @@ export default class SignupForm extends Component {
             </h2>
           </PoseTransition>
         )}
-        {this.state.userType === "bereived" && (
+        {this.state.userType === "berieved" && (
           <PoseTransition>
             <h2 className="center">
               We are so sorry for your loss. Please enter some information about
